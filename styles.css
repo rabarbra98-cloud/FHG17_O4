@@ -1,0 +1,119 @@
+:root {
+  --darkColor: #000;
+  --lightColor: #fff;
+  --primaryColor: #5f506b;
+  --secondaryColor: #76949f;
+  --accentPrimColor: #6a6b83;
+  --accentSecColor: #86bbbd;
+  --defaultSpacing: 1.6rem;
+  --defaultFontFamily: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: var(--defaultFontFamily);
+  color: var(--darkColor);
+  background-color: #f7f7f7;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 3.2rem 1.6rem;
+}
+
+.header h1 {
+  margin-bottom: 0.8rem;
+}
+
+.introText {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 1.6rem;
+}
+
+.todoSection {
+  width: 100%;
+  max-width: 60rem;
+  background-color: var(--lightColor);
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.08);
+}
+
+.todoSection h2 {
+  margin-top: 0;
+}
+
+.todoForm {
+  margin-bottom: 2.4rem;
+}
+
+.todoForm label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.todoInput {
+  flex: 1;
+  min-width: 20rem;
+  padding: 1.2rem;
+  border: 2px solid var(--accentPrimColor);
+  border-radius: 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+.submitButton {
+  padding: 1.2rem 1.6rem;
+  border-radius: 1rem;
+  border: 2px solid var(--accentPrimColor);
+  background-color: var(--lightColor);
+  font-size: 1.6rem;
+  font-family: inherit;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+  border-color: var(--primaryColor);
+}
+
+.todoList {
+  list-style: none;
+}
+
+.todoItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  margin: 1.2rem;
+  border: 2px solid var(--secondaryColor);
+  border-radius: 1rem;
+  background-color: #f2f6f7;
+}
+
+.footer {
+  text-align: center;
+  padding: 2.4rem 1.6rem;
+}

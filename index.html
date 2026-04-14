@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gjøremålsapplikasjon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Gjøremålsapplikasjon</h1>
+    </header>
+
+    <main class="main">
+      <section class="todoSection">
+        <h2>Mine oppgaver</h2>
+
+        <form class="todoForm">
+          <label for="todoInput">Skriv inn en oppgave</label>
+          <div class="inputWrapper">
+            <input
+              type="text"
+              name="todoInput"
+              id="todoInput"
+              class="todoInput"
+              placeholder="For eksempel: Vaske rommet"
+            />
+            <button type="submit" id="submitButton" class="submitButton">
+              Legg til
+            </button>
+          </div>
+        </form>
+
+        <ul id="todoList" class="todoList">
+          <li class="todoItem">Eksempel på oppgave</li>
+          <li class="todoItem">
+            Eksempel på oppgave
+            <span><button>Ferdig</button><button>Slett</button></span>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Laget av Julie Hauge</p>
+    </footer>
+  </body>
+</html>
