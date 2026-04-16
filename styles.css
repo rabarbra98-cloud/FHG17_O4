@@ -113,6 +113,19 @@ body {
   background-color: #f2f6f7;
 }
 
+.doneButton {
+  color: green;
+}
+
+.deleteButton {
+  color: red;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  background-color: green;
+}
+
 .footer {
   text-align: center;
   padding: 2.4rem 1.6rem;
